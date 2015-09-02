@@ -97,7 +97,7 @@ namespace Noear.Snacks
                     String popName = reader.Value;
 
                     if (popName == null) //如果取不到值，则停止解析
-                        throw new OpsException("XML格式有问题");
+                        throw new SnacksException("XML格式有问题");
 
                     if (instance.contains(popName)) //尝试将obj转换为ary
                         instance.shiftToArray();
@@ -189,7 +189,7 @@ namespace Noear.Snacks
                     }
 
                     if (item == null) //如果取不到值，则停止解析
-                        throw new OpsException("JSON格式有问题");
+                        throw new SnacksException("JSON格式有问题");
 
                     instance.add(item);
 
@@ -209,12 +209,12 @@ namespace Noear.Snacks
                     String property = (String)reader.Value;
 
                     if (property == null)//如果取不到值，则停止解析
-                        throw new OpsException("JSON格式有问题");
+                        throw new SnacksException("JSON格式有问题");
 
                     ONode val = readJsonValue(reader);
 
                     if (val == null) //如果取不到值，则停止解析
-                        throw new OpsException();
+                        throw new SnacksException();
 
                     instance.set(property, val);
                 }

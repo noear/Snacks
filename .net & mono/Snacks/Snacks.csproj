@@ -51,7 +51,7 @@
     <Compile Include="ONode.Operator.cs" />
     <Compile Include="ONodeType.cs" />
     <Compile Include="OObject.cs" />
-    <Compile Include="OpsException.cs" />
+    <Compile Include="SnacksException.cs" />
     <Compile Include="OValue.cs" />
     <Compile Include="OValueType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
