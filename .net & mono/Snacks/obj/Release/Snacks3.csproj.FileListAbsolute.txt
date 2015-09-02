@@ -1,0 +1,4 @@
+C:\D\research_weed3\Snacks\bin\Release\Noear.Snacks3.dll
+C:\D\research_weed3\Snacks\bin\Release\Noear.Snacks3.pdb
+C:\D\research_weed3\Snacks\obj\Release\Noear.Snacks3.dll
+C:\D\research_weed3\Snacks\obj\Release\Noear.Snacks3.pdb
