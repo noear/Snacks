@@ -10,7 +10,7 @@ import java.util.Date;
 public class ONode extends ONodeBase {
 
     public static String  NULL_DEFAULT="\"\"";
-    public static boolean BOOL_USE01=true;
+    public static boolean BOOL_USE01=false;
     public static FormatHanlder TIME_FORMAT_ACTION=new FormatHanlder(){
         @Override
         public String run(Date e)
@@ -129,7 +129,7 @@ public class ONode extends ONodeBase {
     }
 
     //=============
-
+    //返回结果节点
     public ONode get(int index) {
         tryInitArray();
 
@@ -138,7 +138,7 @@ public class ONode extends ONodeBase {
         else
             return null;
     }
-
+    //返回结果节点
     public ONode get(String key) {
         tryInitObject();
 
@@ -151,41 +151,79 @@ public class ONode extends ONodeBase {
         }
     }
 
-    public void add(ONode value) {
+    //返回自己
+    public ONode add(ONode value) {
         tryInitArray();
 
         _array.add(value);
+
+        return this;
     }
 
-    public void set(String key,ONode value) {
+    //返回新节点
+    public ONode add(){
+        ONode n = new ONode();
+
+        add(n);
+
+        return n;
+    }
+
+    //返回自己
+    public ONode set(String key,ONode value) {
         if (_object == null)
             _object = new OObject();
 
         _object.set(key, value);
+
+        return this;
     }
 
-    public  void set(String key,String value) {
+    //返回自己
+    public  ONode set(String key,String value) {
         tryInitObject();
         _object.set(key, new ONode(value));
+
+        return this;
     }
 
-    public  void set(String key,int value) {
+    //返回自己
+    public  ONode set(String key,int value) {
         tryInitObject();
         _object.set(key, new ONode(value));
+
+        return this;
     }
 
-    public  void set(String key,long value) {
+    //返回自己
+    public  ONode set(String key,long value) {
         tryInitObject();
         _object.set(key, new ONode(value));
+
+        return this;
     }
 
-    public  void set(String key,double value) {
+    //返回自己
+    public  ONode set(String key,double value) {
         tryInitObject();
         _object.set(key, new ONode(value));
+
+        return this;
     }
 
-    public  void set(String key,Date value) {
+    //返回自己
+    public  ONode set(String key,boolean value) {
         tryInitObject();
         _object.set(key, new ONode(value));
+
+        return this;
+    }
+
+    //返回自己
+    public  ONode set(String key,Date value) {
+        tryInitObject();
+        _object.set(key, new ONode(value));
+
+        return this;
     }
 }
