@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Noear.Snacks</RootNamespace>
     <AssemblyName>Noear.Snacks3</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,7 +52,7 @@
     <Compile Include="ONode.Operator.cs" />
     <Compile Include="ONodeType.cs" />
     <Compile Include="OObject.cs" />
-    <Compile Include="OpsException.cs" />
+    <Compile Include="SnacksException.cs" />
     <Compile Include="OValue.cs" />
     <Compile Include="OValueType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
