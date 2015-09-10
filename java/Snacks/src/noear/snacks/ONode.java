@@ -10,7 +10,7 @@ import java.util.Date;
 public class ONode extends ONodeBase {
 
     public static String  NULL_DEFAULT="\"\"";
-    public static boolean BOOL_USE01=true;
+    public static boolean BOOL_USE01=false;
     public static FormatHanlder TIME_FORMAT_ACTION=new FormatHanlder(){
         @Override
         public String run(Date e)
@@ -205,6 +205,14 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public  ONode set(String key,double value) {
+        tryInitObject();
+        _object.set(key, new ONode(value));
+
+        return this;
+    }
+
+    //返回自己
+    public  ONode set(String key,boolean value) {
         tryInitObject();
         _object.set(key, new ONode(value));
 
