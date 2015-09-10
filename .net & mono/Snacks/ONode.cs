@@ -6,7 +6,7 @@ using System.Text;
 namespace Noear.Snacks {
     public partial class ONode {
         public static String NULL_DEFAULT = "\"\"";
-        public static bool BOOL_USE01 = true;
+        public static bool BOOL_USE01 = false;
         public static FormatHanlder TIME_FORMAT_ACTION = (DateTime e) => {
             return e.ToString("yyyy-MM-dd HH:mm:ss");
         };
