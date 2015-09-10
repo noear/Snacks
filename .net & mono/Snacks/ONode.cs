@@ -167,6 +167,7 @@ namespace Noear.Snacks {
         }
 
         //=============
+        //返回目标节点
         public ONode this[string key] {
             get {
                 return get(key);
@@ -175,7 +176,7 @@ namespace Noear.Snacks {
                 set(key, value);
             }
         }
-
+        //返回自己
         public ONode get(int index) {
             tryInitArray();
 
@@ -185,7 +186,7 @@ namespace Noear.Snacks {
                 return null;
         }
 
-
+        //返回自己
         public ONode get(String key) {
             tryInitObject();
 
@@ -197,7 +198,7 @@ namespace Noear.Snacks {
                 return temp;
             }
         }
-
+        //返回自己
         public ONode set(String key, ONode value) {
             tryInitObject();
 
@@ -205,12 +206,22 @@ namespace Noear.Snacks {
             return this;
         }
 
+        //返回自己
         public ONode add(ONode value) {
             tryInitArray();
 
             _array.add(value);
 
-            return value;
+            return this;
+        }
+
+        //返回新节点
+        public ONode add() {
+            tryInitArray();
+            ONode temp = new ONode();
+            _array.add(temp);
+
+            return temp;
         }
     }
 }
