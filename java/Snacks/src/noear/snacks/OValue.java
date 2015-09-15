@@ -45,6 +45,7 @@ public class OValue {
     public void set(boolean value)
     {
         _bool = value;
+        type=OValueType.Boolean;
     }
 
     public void set(Date value)
