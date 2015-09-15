@@ -43,6 +43,7 @@ namespace Noear.Snacks
         public void set(bool value)
         {
             _bool = value;
+            type = OValueType.Boolean;
         }
 
         public void set(DateTime value)
