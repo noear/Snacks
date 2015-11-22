@@ -2,6 +2,7 @@
 轻量级数据DOM，可与XML/JSON相互转换
 
 ```java
+//反向:::::::::::::::::
 //object
 ONode n = ONode.tryLoad("{name:'noear',sex:1}");
 int sex = n.get("sex").getInt();
@@ -14,11 +15,11 @@ foreach(ONode n1 in n){
    String url = n1.get("url").getString();
 }
 
-//----------------------
+//正向:::::::::::::::::
 //object
 ONode n = new ONode();
 n.set("name","noear").set("sex",1);
-String json = n.toJson(); //or n.toXml();
+String json = n.toJson(); //or n.toXml(); //或者根据自己情况，增加新的转换
 
 //array
 ONode n = new ONode().asArray();
