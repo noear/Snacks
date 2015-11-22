@@ -3,3 +3,7 @@ C:\D\research_weed3\Snacks\bin\Release\Snacks.pdb
 C:\D\research_weed3\Snacks\obj\Release\Snacks.csprojResolveAssemblyReference.cache
 C:\D\research_weed3\Snacks\obj\Release\Snacks.dll
 C:\D\research_weed3\Snacks\obj\Release\Snacks.pdb
+C:\D\work_github\Snacks\.net & mono\Snacks\bin\Release\Noear.Snacks3.dll
+C:\D\work_github\Snacks\.net & mono\Snacks\bin\Release\Noear.Snacks3.pdb
+C:\D\work_github\Snacks\.net & mono\Snacks\obj\Release\Noear.Snacks3.dll
+C:\D\work_github\Snacks\.net & mono\Snacks\obj\Release\Noear.Snacks3.pdb
