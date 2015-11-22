@@ -49,7 +49,6 @@ namespace Noear.Snacks
         public void set(DateTime value)
         {
             _date = value;
-            type = OValueType.DateTime;
         }
         //==================
 
