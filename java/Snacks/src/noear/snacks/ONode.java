@@ -15,7 +15,10 @@ public class ONode extends ONodeBase {
         @Override
         public String run(Date e)
         {
-            return e.toString();
+            if(e == null)
+                return "";
+            else
+                return e.toString();
         }
     };
 
