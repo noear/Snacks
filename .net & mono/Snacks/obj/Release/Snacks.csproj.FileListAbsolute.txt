@@ -7,4 +7,3 @@ C:\D\work_github\Snacks\.net & mono\Snacks\bin\Release\Noear.Snacks3.dll
 C:\D\work_github\Snacks\.net & mono\Snacks\bin\Release\Noear.Snacks3.pdb
 C:\D\work_github\Snacks\.net & mono\Snacks\obj\Release\Noear.Snacks3.dll
 C:\D\work_github\Snacks\.net & mono\Snacks\obj\Release\Noear.Snacks3.pdb
-C:\D\work_github\Snacks\.net & mono\Snacks\obj\Release\Snacks.csprojResolveAssemblyReference.cache

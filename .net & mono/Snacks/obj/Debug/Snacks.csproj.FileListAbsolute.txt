@@ -1,0 +1,4 @@
+C:\D\work_github\Snacks\.net & mono\Snacks\bin\Debug\Noear.Snacks3.dll
+C:\D\work_github\Snacks\.net & mono\Snacks\bin\Debug\Noear.Snacks3.pdb
+C:\D\work_github\Snacks\.net & mono\Snacks\obj\Debug\Noear.Snacks3.dll
+C:\D\work_github\Snacks\.net & mono\Snacks\obj\Debug\Noear.Snacks3.pdb

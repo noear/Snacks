@@ -8,7 +8,10 @@ namespace Noear.Snacks {
         public static String NULL_DEFAULT = "\"\"";
         public static bool BOOL_USE01 = false;
         public static FormatHanlder TIME_FORMAT_ACTION = (DateTime e) => {
-            return e.ToString("yyyy-MM-dd HH:mm:ss");
+            if (e == null)
+                return "";
+            else
+                return e.ToString("yyyy-MM-dd HH:mm:ss");
         };
         //========================
 
@@ -56,7 +59,22 @@ namespace Noear.Snacks {
 
             return sb.ToString();
         }
-        
+
+        public void forEach(Action<ONode> action) {
+            if (isArray) {
+                foreach (var n1 in _array.elements) {
+                    action(n1);
+                }
+            }
+        }
+
+        public void forEach(Action<String,ONode> action) {
+            if (isObject) {
+                foreach (var n1 in _object.members) {
+                    action(n1.Key, n1.Value);
+                }
+            }
+        }
 
         //=============
         public ONode() {
