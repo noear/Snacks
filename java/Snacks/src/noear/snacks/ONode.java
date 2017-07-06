@@ -161,6 +161,31 @@ public class ONode extends ONodeBase {
         return this;
     }
 
+    public ONode add(String value) {
+        return add(new ONode(value));
+    }
+
+    public ONode add(int value) {
+        return add(new ONode(value));
+    }
+
+    public ONode add(long value) {
+        return add(new ONode(value));
+    }
+
+    public ONode add(double value) {
+        return add(new ONode(value));
+    }
+
+    public ONode add(boolean value) {
+        return add(new ONode(value));
+    }
+
+    public ONode add(Date value) {
+        return add(new ONode(value));
+    }
+
+
     //返回新节点
     public ONode add(){
         ONode n = new ONode();
@@ -172,9 +197,7 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public ONode set(String key,ONode value) {
-        if (_object == null)
-            _object = new OObject();
-
+        tryInitObject();
         _object.set(key, value);
 
         return this;
@@ -182,49 +205,31 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public  ONode set(String key,String value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 
     //返回自己
     public  ONode set(String key,int value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 
     //返回自己
     public  ONode set(String key,long value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 
     //返回自己
     public  ONode set(String key,double value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 
     //返回自己
     public  ONode set(String key,boolean value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 
     //返回自己
     public  ONode set(String key,Date value) {
-        tryInitObject();
-        _object.set(key, new ONode(value));
-
-        return this;
+        return set(key, new ONode(value));
     }
 }
