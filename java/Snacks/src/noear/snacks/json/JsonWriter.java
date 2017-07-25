@@ -182,7 +182,7 @@ public class JsonWriter
             case String:WriteValue(val.getString());break;
             case Boolean:WriteValue(val.getBoolean());break;
             case DateTime:WriteValue(val.getDate());break;
-            case Null:WriteValue("");break;
+            case Null:WriteValue(ONode.NULL_DEFAULT);break;
         }
     }
 }

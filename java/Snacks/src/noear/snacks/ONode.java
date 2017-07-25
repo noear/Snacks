@@ -9,14 +9,14 @@ import java.util.Date;
  */
 public class ONode extends ONodeBase {
 
-    public static String  NULL_DEFAULT="\"\"";
+    public static String  NULL_DEFAULT="null";
     public static boolean BOOL_USE01=false;
     public static FormatHanlder TIME_FORMAT_ACTION=new FormatHanlder(){
         @Override
         public String run(Date e)
         {
             if(e == null)
-                return "";
+                return "null";
             else
                 return e.toString();
         }
@@ -165,6 +165,14 @@ public class ONode extends ONodeBase {
         return add(new ONode(value));
     }
 
+    public ONode add(String value, boolean isOps) {
+        if (isOps) {
+            return add(ONode.tryLoad(value));
+        } else {
+            return add(new ONode(value));
+        }
+    }
+
     public ONode add(int value) {
         return add(new ONode(value));
     }
@@ -206,6 +214,13 @@ public class ONode extends ONodeBase {
     //返回自己
     public  ONode set(String key,String value) {
         return set(key, new ONode(value));
+    }
+    public  ONode set(String key,String value, boolean isOps) {
+        if (isOps) {
+            return set(key, ONode.tryLoad(value));
+        } else {
+            return set(key, new ONode(value));
+        }
     }
 
     //返回自己
