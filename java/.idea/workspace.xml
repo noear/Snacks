@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec72857-613e-4b70-94b6-4f1f3b673f99" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" />
     </list>
     <ignored path="Snacks.iws" />
@@ -35,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Snacks/_readme.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ONode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="154" column="13" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="154" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -82,9 +91,9 @@
         <option value="$PROJECT_DIR$/Snacks/_readme.txt" />
         <option value="$PROJECT_DIR$/SnacksDemo/src/demo/Build_demo.java" />
         <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java" />
-        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" />
         <option value="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" />
       </list>
     </option>
   </component>
@@ -145,6 +154,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Snacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Snacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Snacks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snacks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,7 +679,7 @@
       <workItem from="1499312189587" duration="1286000" />
       <workItem from="1500977462617" duration="181000" />
       <workItem from="1500982163774" duration="778000" />
-      <workItem from="1501037955592" duration="1717000" />
+      <workItem from="1501037955592" duration="2586000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交java代码（未完成demo）">
       <created>1441185805976</created>
@@ -700,7 +727,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14522000" />
+    <option name="totallyTimeSpent" value="15391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -917,14 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474">
-          <caret line="144" column="21" lean-forward="true" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -953,6 +972,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="154" column="13" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="154" selection-end-column="13" />
           <folding />
         </state>
       </provider>

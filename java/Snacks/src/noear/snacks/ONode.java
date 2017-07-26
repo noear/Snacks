@@ -144,7 +144,7 @@ public class ONode extends ONodeBase {
 
                 try {
                     StringWriter writer = new StringWriter(str.length());
-                    unescapeJava(writer, str);
+                    unescapeUnicode(writer, str);
                     return writer.toString();
                 }
                 catch (Exception ex){
@@ -276,7 +276,7 @@ public class ONode extends ONodeBase {
     }
 
 
-    private static void unescapeJava(Writer out, String str) throws IOException {
+    private static void unescapeUnicode(Writer out, String str) throws IOException {
         if(out == null) {
             throw new IllegalArgumentException("The Writer must not be null");
         } else if(str != null) {
