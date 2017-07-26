@@ -15,6 +15,10 @@ foreach(ONode n1 in n){
    String url = n1.get("url").getString();
 }
 
+//反向:::::::::::::::::（如果有unicode需要转码）
+//object
+ONode n = ONode.tryLoad("{name:'noear',sex:1}").unescape(true);
+
 //正向:::::::::::::::::
 //object
 ONode n = new ONode();
