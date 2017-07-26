@@ -1,6 +1,8 @@
 ﻿using Noear.Snacks.Json;
 using Noear.Snacks.Xml;
 using System;
+using System.Globalization;
+using System.IO;
 using System.Text;
 
 namespace Noear.Snacks {
@@ -13,6 +15,13 @@ namespace Noear.Snacks {
             else
                 return e.ToString("yyyy-MM-dd HH:mm:ss");
         };
+
+        private bool _unescape = false;
+
+        public ONode unescape(bool isUnescape) {
+            _unescape = isUnescape;
+            return this;
+        }
         //========================
 
         public static ONode load(String ops) {
@@ -34,8 +43,7 @@ namespace Noear.Snacks {
                     return readXmlValue(new XmlReader(ops));
                 else
                     return readJsonValue(new JsonReader(ops));
-            }
-            catch {
+            } catch {
                 return new ONode();
             }
         }
@@ -68,7 +76,7 @@ namespace Noear.Snacks {
             }
         }
 
-        public void forEach(Action<String,ONode> action) {
+        public void forEach(Action<String, ONode> action) {
             if (isObject) {
                 foreach (var n1 in _object.members) {
                     action(n1.Key, n1.Value);
@@ -178,10 +186,26 @@ namespace Noear.Snacks {
         }
 
         public String getString() {
-            if (_value == null)
+            if (_value == null) {
                 return "";
-            else
-                return _value.getString();
+            } else {
+                if (_unescape) {
+                    String str = _value.getString();
+                    if (str == null || str.Length == 0) {
+                        return str;
+                    }
+
+                    try {
+                        StringWriter writer = new StringWriter();
+                        unescapeUnicode(writer, str);
+                        return writer.ToString();
+                    } catch (Exception) {
+                        return str;
+                    }
+                } else {
+                    return _value.getString();
+                }
+            }
         }
 
         //=============
@@ -209,7 +233,7 @@ namespace Noear.Snacks {
             tryInitObject();
 
             if (_object.contains(key))
-                return _object.get(key);
+                return _object.get(key).unescape(_unescape);
             else {
                 ONode temp = new ONode();
                 _object.set(key, temp);
@@ -240,6 +264,78 @@ namespace Noear.Snacks {
             _array.add(temp);
 
             return temp;
+        }
+
+        private static void unescapeUnicode(StringWriter out1, String str) {
+            if (out1 == null) {
+                throw new ArgumentException("The Writer must not be null");
+            } else if (str != null) {
+                int sz = str.Length;
+                StringBuilder unicode = new StringBuilder(4);
+                bool hadSlash = false;
+                bool inUnicode = false;
+
+                for (int i = 0; i < sz; ++i) {
+                    char ch = str[i];
+                    if (inUnicode) {
+                        unicode.Append(ch);
+                        if (unicode.Length == 4) {
+                            try {
+                                int value = int.Parse(unicode.ToString(), NumberStyles.HexNumber);
+                                out1.Write((char)value);
+                                unicode.Clear();
+                                inUnicode = false;
+                                hadSlash = false;
+                            } catch (FormatException var9) {
+                                throw new FormatException("Unable to parse unicode value: " + unicode, var9);
+                            }
+                        }
+                    } else if (hadSlash) {
+                        hadSlash = false;
+                        switch (ch) {
+                            case '"':
+                                out1.Write(34);
+                                break;
+                            case '\'':
+                                out1.Write(39);
+                                break;
+                            case '\\':
+                                out1.Write(92);
+                                break;
+                            case 'b':
+                                out1.Write(8);
+                                break;
+                            case 'f':
+                                out1.Write(12);
+                                break;
+                            case 'n':
+                                out1.Write(10);
+                                break;
+                            case 'r':
+                                out1.Write(13);
+                                break;
+                            case 't':
+                                out1.Write(9);
+                                break;
+                            case 'u':
+                                inUnicode = true;
+                                break;
+                            default:
+                                out1.Write(ch);
+                                break;
+                        }
+                    } else if (ch == 92) {
+                        hadSlash = true;
+                    } else {
+                        out1.Write(ch);
+                    }
+                }
+
+                if (hadSlash) {
+                    out1.Write(92);
+                }
+
+            }
         }
     }
 }
