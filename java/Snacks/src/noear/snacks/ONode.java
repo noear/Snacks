@@ -1,6 +1,9 @@
 package noear.snacks;
 
 
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -21,6 +24,13 @@ public class ONode extends ONodeBase {
                 return e.toString();
         }
     };
+
+    private boolean _unescape = false;
+
+    public ONode unescape(boolean isUnescape) {
+        _unescape = isUnescape;
+        return this;
+    }
 
     //=============
     public ONode(){
@@ -125,8 +135,25 @@ public class ONode extends ONodeBase {
     public String getString() {
         if (_value == null)
             return "";
-        else
-            return _value.getString();
+        else {
+            if(_unescape){
+                String str = _value.getString();
+                if(str == null || str.length()==0){
+                    return str;
+                }
+
+                try {
+                    StringWriter writer = new StringWriter(str.length());
+                    unescapeJava(writer, str);
+                    return writer.toString();
+                }
+                catch (Exception ex){
+                    return str;
+                }
+            }else {
+                return _value.getString();
+            }
+        }
     }
 
     //=============
@@ -135,7 +162,7 @@ public class ONode extends ONodeBase {
         tryInitArray();
 
         if (_array.elements.size() > index)
-            return _array.elements.get(index);
+            return _array.elements.get(index).unescape(_unescape);
         else
             return null;
     }
@@ -144,7 +171,7 @@ public class ONode extends ONodeBase {
         tryInitObject();
 
         if (_object.contains(key))
-            return _object.get(key);
+            return _object.get(key).unescape(_unescape);
         else {
             ONode temp = new ONode();
             _object.set(key, temp);
@@ -246,5 +273,77 @@ public class ONode extends ONodeBase {
     //返回自己
     public  ONode set(String key,Date value) {
         return set(key, new ONode(value));
+    }
+
+
+    private static void unescapeJava(Writer out, String str) throws IOException {
+        if(out == null) {
+            throw new IllegalArgumentException("The Writer must not be null");
+        } else if(str != null) {
+            int sz = str.length();
+            StringBuilder unicode = new StringBuilder(4);
+            boolean hadSlash = false;
+            boolean inUnicode = false;
+
+            for(int i = 0; i < sz; ++i) {
+                char ch = str.charAt(i);
+                if(inUnicode) {
+                    unicode.append(ch);
+                    if(unicode.length() == 4) {
+                        try {
+                            int value = Integer.parseInt(unicode.toString(), 16);
+                            out.write((char)value);
+                            unicode.setLength(0);
+                            inUnicode = false;
+                            hadSlash = false;
+                        } catch (NumberFormatException var9) {
+                            throw new IOException("Unable to parse unicode value: " + unicode, var9);
+                        }
+                    }
+                } else if(hadSlash) {
+                    hadSlash = false;
+                    switch(ch) {
+                        case '"':
+                            out.write(34);
+                            break;
+                        case '\'':
+                            out.write(39);
+                            break;
+                        case '\\':
+                            out.write(92);
+                            break;
+                        case 'b':
+                            out.write(8);
+                            break;
+                        case 'f':
+                            out.write(12);
+                            break;
+                        case 'n':
+                            out.write(10);
+                            break;
+                        case 'r':
+                            out.write(13);
+                            break;
+                        case 't':
+                            out.write(9);
+                            break;
+                        case 'u':
+                            inUnicode = true;
+                            break;
+                        default:
+                            out.write(ch);
+                    }
+                } else if(ch == 92) {
+                    hadSlash = true;
+                } else {
+                    out.write(ch);
+                }
+            }
+
+            if(hadSlash) {
+                out.write(92);
+            }
+
+        }
     }
 }
