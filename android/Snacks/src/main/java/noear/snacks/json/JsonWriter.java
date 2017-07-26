@@ -6,6 +6,7 @@ import noear.snacks.OValue;
 /**
  * Created by noear on 14-6-18.
  */
+
 public class JsonWriter
 {
 	public JsonWriter(StringBuilder writer)
@@ -15,6 +16,7 @@ public class JsonWriter
 
 	private boolean _LastIsEnd = false;
 	private StringBuilder _Writer;
+
 	public final void WriteObjectStart()
 	{
 		if (_LastIsEnd)
@@ -182,7 +184,7 @@ public class JsonWriter
             case String:WriteValue(val.getString());break;
             case Boolean:WriteValue(val.getBoolean());break;
             case DateTime:WriteValue(val.getDate());break;
-            case Null:WriteValue("");break;
+            case Null:WriteValue(ONode.NULL_DEFAULT);break;
         }
     }
 }

@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 /**
  * Created by noear on 14-6-11.
@@ -106,6 +104,95 @@ public class ONodeBase implements Iterable<ONode>{
         }
     }
 
+
+
+    public boolean isObject()
+    {
+        return _type == ONodeType.Object;
+    }
+
+    public boolean isArray()
+    {
+        return _type == ONodeType.Array;
+    }
+
+    public boolean isValue()
+    {
+        return _type == ONodeType.Value;
+    }
+
+    public ONode asObject()
+    {
+        tryInitObject();
+        return (ONode)this;
+    }
+
+    public ONode asArray()
+    {
+        tryInitArray();
+        return (ONode)this;
+    }
+
+    protected void setInt(int value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    protected void setLong(long value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    protected void setDouble(double value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    protected void setString(String value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    protected void setBoolean(boolean value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    protected void setDateTime(Date value){
+        tryInitValue();
+
+        _value.set(value);
+    }
+
+    @Override
+    public Iterator<ONode> iterator() {
+        if(isArray())
+            return _array.elements.iterator();
+        else
+            return null;
+    }
+
+
+//    @Override
+//    public void forEach(Consumer<? super ONode> action) {
+//        if(isArray())
+//            _array.elements.forEach(action);
+//    }
+//
+//    @Override
+//    public Spliterator<ONode> spliterator() {
+//        if(isArray())
+//            return _array.elements.spliterator();
+//        else
+//            return null;
+//    }
+
+    //----------------------------------------
     //================
 
     private static ONode readXmlValue(XmlReader reader) throws IOException,SnacksException {
@@ -312,7 +399,7 @@ public class ONodeBase implements Iterable<ONode>{
             for(Map.Entry<String, ONode> kv:node._object.members.entrySet())
             {
                 writer.WriteNodeStart(kv.getKey());
-                writeXml(kv.getValue(),writer);
+                writeXml(kv.getValue(), writer);
                 writer.WriteNodeEnd(kv.getKey());
             }
             return;
@@ -327,90 +414,5 @@ public class ONodeBase implements Iterable<ONode>{
             }
             return;
         }
-    }
-
-    public boolean isObject()
-    {
-        return _type == ONodeType.Object;
-    }
-
-    public boolean isArray()
-    {
-        return _type == ONodeType.Array;
-    }
-
-    public boolean isValue()
-    {
-        return _type == ONodeType.Value;
-    }
-
-    public ONode asObject()
-    {
-        tryInitObject();
-        return (ONode)this;
-    }
-
-    public ONode asArray()
-    {
-        tryInitArray();
-        return (ONode)this;
-    }
-
-    protected void setInt(int value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    protected void setLong(long value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    protected void setDouble(double value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    protected void setString(String value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    protected void setBoolean(boolean value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    protected void setDateTime(Date value){
-        tryInitValue();
-
-        _value.set(value);
-    }
-
-    @Override
-    public Iterator<ONode> iterator() {
-        if(isArray())
-            return _array.elements.iterator();
-        else
-            return null;
-    }
-
-    @Override
-    public void forEach(Consumer<? super ONode> action) {
-        if(isArray())
-            _array.elements.forEach(action);
-    }
-
-    @Override
-    public Spliterator<ONode> spliterator() {
-        if(isArray())
-            return _array.elements.spliterator();
-        else
-            return null;
     }
 }

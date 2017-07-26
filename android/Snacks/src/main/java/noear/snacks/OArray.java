@@ -34,5 +34,7 @@ public class OArray {
         return elements.size();
     }
 
-    public void clear(){}
+    public void clear(){
+        elements.clear();
+    }
 }
