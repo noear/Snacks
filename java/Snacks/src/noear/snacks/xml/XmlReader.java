@@ -53,22 +53,23 @@ public class XmlReader {
         }
     }
 
-    private void ReadCDATA()
-    {
+    private boolean ReadCDATA() {
         int xml_index2 = xml_index;
+        int len = xml_text.length();
 
-        while (true)
-        {
+        while (true) {
             xml_index = xml_text.indexOf(']', xml_index);
 
-            if (xml_text.charAt(xml_index + 1) == ']' && xml_text.charAt(xml_index + 2) == '>')
-            {
+            if (xml_text.charAt(xml_index + 1) == ']' && xml_text.charAt(xml_index + 2) == '>') {
                 this.Value = xml_text.substring(xml_index2, xml_index);
                 xml_index = xml_index + 3;
-                return;
-            }
-            else
+                return true;
+            } else
                 xml_index++;
+
+            if (xml_index > len) {
+                return false;
+            }
         }
     }
 

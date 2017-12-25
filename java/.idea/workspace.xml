@@ -1,7 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Noear.Snacks:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec72857-613e-4b70-94b6-4f1f3b673f99" name="Default" comment="" />
+    <list default="true" id="fec72857-613e-4b70-94b6-4f1f3b673f99" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Snacks_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Noear_Snacks_jar/Noear.Snacks3-android.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Noear_Snacks_jar/Noear.Snacks3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/FormatHanlder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/OArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/ONode$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/ONode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/ONodeBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/ONodeType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/OObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/OValue$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/OValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/OValueType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/SnacksException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/exts/Fun1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/exts/StringReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/json/JsonReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/json/JsonToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/json/JsonWriter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/json/JsonWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/json/ValueType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/xml/XmlReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/xml/XmlToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/xml/XmlWriter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Snacks/noear/snacks/xml/XmlWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/JPushClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/ClientConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/DeviceType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/ServiceHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/TimeUnit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/Week.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/HttpProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/IHttpClient$RequestMethod.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/IHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/NativeHttpClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/NativeHttpClient$SimpleHostnameVerifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/NativeHttpClient$SimpleProxyAuthenticator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/NativeHttpClient$SimpleTrustManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/connection/NativeHttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/APIConnectionException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/APIRequestException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/BaseResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/BooleanResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/DefaultResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/IRateLimiting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/ResponseWrapper$ErrorEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/ResponseWrapper$ErrorObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/common/resp/ResponseWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/device/AliasDeviceListResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/device/DeviceClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/device/TagAliasResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/device/TagListResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/PushClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/PushResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Message$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Message$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Options$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Options$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Options.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Platform$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Platform$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/Platform.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/PushModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/PushPayload$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/PushPayload$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/PushPayload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/Audience$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/Audience$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/Audience.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/AudienceTarget$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/AudienceTarget$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/AudienceTarget.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/audience/AudienceType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/AndroidNotification$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/AndroidNotification$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/AndroidNotification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/IosNotification$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/IosNotification$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/IosNotification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/Notification$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/Notification$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/Notification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/PlatformNotification$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/PlatformNotification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/WinphoneNotification$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/WinphoneNotification$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/push/model/notification/WinphoneNotification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/MessagesResult$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/MessagesResult$Android.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/MessagesResult$Ios.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/MessagesResult$Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/MessagesResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/ReceivedsResult$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/ReceivedsResult$Received.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/ReceivedsResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/ReportClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/UsersResult$Android.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/UsersResult$Ios.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/UsersResult$User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/report/UsersResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/ScheduleClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/ScheduleListResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/ScheduleResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/IModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/SchedulePayload$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/SchedulePayload$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/SchedulePayload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/TriggerPayload$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/TriggerPayload$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/TriggerPayload$Type.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/schedule/model/TriggerPayload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/utils/Base64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/utils/Nullable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/utils/Preconditions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/utils/StringUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/cn/jpush/api/utils/TimeUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/demo/Build_demo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/demo/Param_demo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SnacksDemo/demo/util/PushApi.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Snacks_jar/Noear.Snacks3.jar" afterPath="$PROJECT_DIR$/out/artifacts/Snacks_jar/Noear.Snacks3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/OObject.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/OObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlReader.java" afterPath="$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlReader.java" />
+    </list>
     <ignored path="Snacks.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,19 +152,150 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="Snacks" />
+    <favorites_list name="Snacks">
+      <favorite_root url="file://$PROJECT_DIR$/Snacks" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/Snacks/out" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/xml" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/xml/XmlToken.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/xml/XmlReader.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/xml/XmlWriter.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/exts" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/exts/Fun1.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/exts/StringReader.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/json" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/json/JsonToken.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/json/ValueType.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/json/JsonReader.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/json/JsonWriter.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/ONode.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/OArray.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/OValue.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/OObject.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/ONodeBase.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/ONodeType.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/OValueType.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/OpsException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/Snacks/out/production/Snacks/noear/snacks/FormatHanlder.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Snacks/src" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/xml" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlToken.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlReader.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlWriter.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/exts" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/exts/Fun1.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/exts/StringReader.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonToken.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/ValueType.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonReader.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OArray.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OObject.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeType.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OValueType.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/FormatHanlder.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/Snacks/src/noear/snacks/SnacksException.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Snacks/META-INF" module="Snacks" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/Snacks/Snacks.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/Snacks/_readme.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="_readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Snacks/_readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonWriter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5462">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>null</find>
       <find>get</find>
       <find>NULL_DEFAULT</find>
+      <find>asArr</find>
+      <find>toJson</find>
+      <find>TIME_FORMAT_ACTION</find>
+      <find>remove</find>
+      <find>JsonWriter</find>
+      <find>JsonWriter2</find>
+      <find>ReadCDATA</find>
     </findStrings>
+    <replaceStrings>
+      <replace>JsonWriter2</replace>
+      <replace>JsonWriter</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -56,12 +323,24 @@
         <option value="$PROJECT_DIR$/SnacksDemo/src/cn/jpush/api/push/model/audience/Audience.java" />
         <option value="$PROJECT_DIR$/SnacksDemo/src/demo/PushApi.java" />
         <option value="$PROJECT_DIR$/SnacksDemo/src/demo/Param_demo.java" />
-        <option value="$PROJECT_DIR$/Snacks/_readme.txt" />
         <option value="$PROJECT_DIR$/SnacksDemo/src/demo/Build_demo.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java" />
         <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java" />
-        <option value="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/OObject.java" />
         <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/SerializationException.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonObject.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/Base64.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter2.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json/UnknownSerializer.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/UnknownSerializer.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonWriter2.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonWriter.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonObject.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlReader.java" />
+        <option value="$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java" />
+        <option value="$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/Snacks/_readme.txt" />
       </list>
     </option>
   </component>
@@ -71,9 +350,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -113,37 +393,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snacks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snacks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snacks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snacks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Snacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="snacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Snacks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="snacks" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,7 +448,6 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28078252" />
-    <property name="FullScreen" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
@@ -184,12 +470,110 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/SnacksDemo/libs/gson-2.2.4.jar" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -219,6 +603,26 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -244,30 +648,6 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -416,43 +796,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="false" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/SnacksDemo/libs/gson-2.2.4.jar" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SCRATCH_FILE_ID" value="0" />
@@ -496,7 +839,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Snacks" />
       <envs />
-      <method />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -510,55 +852,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -573,26 +869,6 @@
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
   </component>
@@ -630,6 +906,22 @@
       <workItem from="1500977462617" duration="181000" />
       <workItem from="1500982163774" duration="778000" />
       <workItem from="1501037955592" duration="3217000" />
+      <workItem from="1501041862286" duration="575000" />
+      <workItem from="1501467747507" duration="1433000" />
+      <workItem from="1501471577317" duration="598000" />
+      <workItem from="1501490539178" duration="1800000" />
+      <workItem from="1501660935705" duration="204000" />
+      <workItem from="1501661407999" duration="131000" />
+      <workItem from="1501661616510" duration="5000" />
+      <workItem from="1503363764153" duration="527000" />
+      <workItem from="1506063349194" duration="1295000" />
+      <workItem from="1506740867569" duration="1941000" />
+      <workItem from="1506763306671" duration="259000" />
+      <workItem from="1506763963012" duration="691000" />
+      <workItem from="1506764708438" duration="1158000" />
+      <workItem from="1511490780473" duration="1302000" />
+      <workItem from="1512962605051" duration="193000" />
+      <workItem from="1514182853777" duration="94000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交java代码（未完成demo）">
       <created>1441185805976</created>
@@ -677,14 +969,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16022000" />
+    <option name="totallyTimeSpent" value="28228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -693,11 +985,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28756058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.315832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -706,19 +997,21 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -749,6 +1042,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5820">
+          <caret line="388" column="27" lean-forward="true" selection-start-line="388" selection-start-column="27" selection-end-line="388" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/Base64.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonObject.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonReader.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="268" column="22" lean-forward="false" selection-start-line="268" selection-start-column="22" selection-end-line="268" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -861,43 +1199,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3747">
-          <caret line="256" column="50" lean-forward="false" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="401" column="0" lean-forward="true" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,30 +1210,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="324" column="5" lean-forward="true" selection-start-line="324" selection-start-column="5" selection-end-line="324" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/OObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/SerializationException.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/UnknownSerializer.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonWriter.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/Base64.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonObject.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json_dsl/JsonReader.java" />
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/xml/XmlReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="133" column="28" lean-forward="false" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONodeBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Snacks/_readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="78" column="45" lean-forward="false" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="45" />
+        <state relative-caret-position="15">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/ONode.java">
+    <entry file="file://$PROJECT_DIR$/Snacks/src/noear/snacks/json/JsonReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4740">
-          <caret line="348" column="1" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="348" selection-end-column="1" />
+        <state relative-caret-position="-5462">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Snacks/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -956,7 +1323,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.28078252" />
               </list>
             </option>
           </splitter-proportions>
@@ -987,11 +1354,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Snacks</last-edited>
+          <last-edited>SnacksDemo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.28078252" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1015,7 +1383,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.28078252" />
               </list>
             </option>
           </splitter-proportions>

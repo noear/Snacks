@@ -8,10 +8,9 @@ import noear.snacks.xml.XmlToken;
 import noear.snacks.xml.XmlWriter;
 
 import java.io.IOException;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Spliterator;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.*;
 import java.util.function.Consumer;
 
 /**
@@ -30,7 +29,35 @@ public class ONodeBase implements Iterable<ONode>{
 
     public static ONode tryLoad(String ops){
         try{
+            ops = ops.trim();
+
             return load(ops);
+        }catch (Exception ex){
+            return new ONode();
+        }
+    }
+
+    public static ONode tryLoadXml(String ops){
+        try{
+            ops = ops.trim();
+
+            if (ops.charAt(0) == '<')
+                return readXmlValue(new XmlReader(ops));
+            else
+                return new ONode();
+        }catch (Exception ex){
+            return new ONode();
+        }
+    }
+
+    public static ONode tryLoadJson(String ops){
+        try{
+            ops = ops.trim();
+
+            if (ops.charAt(0) == '{')
+                return readJsonValue(new JsonReader(ops));
+            else
+                return new ONode();
         }catch (Exception ex){
             return new ONode();
         }
@@ -47,9 +74,13 @@ public class ONodeBase implements Iterable<ONode>{
 
     }
 
-    public String toJson() {
+    public String toJson(){
+        return toJson(null);
+    }
+
+    public String toJson(FormatHanlder dateFormat) {
         StringBuilder sb = new StringBuilder();
-        JsonWriter writer = new JsonWriter(sb);
+        JsonWriter writer = new JsonWriter(sb,dateFormat);
 
         writeJson(this, writer);
 
@@ -178,7 +209,7 @@ public class ONodeBase implements Iterable<ONode>{
 
         if (reader.Token == JsonToken.String)
         {
-            instance.setString((String) reader.Value);
+            instance.setString(tryUnescape((String) reader.Value));
             return instance;
         }
 
@@ -265,8 +296,10 @@ public class ONodeBase implements Iterable<ONode>{
     //=================
     protected static void writeJson(ONodeBase node, JsonWriter writer)
     {
-        if(node._type == ONodeType.Null)
+        if(node._type == ONodeType.Null) {
+            writer.WriteValue(node._value);
             return;
+        }
 
         if(node._type == ONodeType.Value)
         {
@@ -412,5 +445,106 @@ public class ONodeBase implements Iterable<ONode>{
             return _array.elements.spliterator();
         else
             return null;
+    }
+
+    public Collection<String> allKeys(){
+        if(isObject()){
+            return _object.members.keySet();
+        }else{
+            return null;
+        }
+    }
+
+    //=======================
+    //
+    private static String tryUnescape(String str){
+        if(str == null){
+            return null;
+        }
+
+        if(str.indexOf("\\u")<0){
+            return str;
+        }
+
+        try {
+
+            StringWriter writer = new StringWriter(str.length());
+            unescapeUnicode(writer, str);
+
+            return writer.toString();
+        }catch (Exception ex){
+            return str;
+        }
+    }
+
+    private static void unescapeUnicode(Writer out, String str) throws IOException {
+        if(out == null) {
+            throw new IllegalArgumentException("The Writer must not be null");
+        } else if(str != null) {
+            int sz = str.length();
+            StringBuilder unicode = new StringBuilder(4);
+            boolean hadSlash = false;
+            boolean inUnicode = false;
+
+            for(int i = 0; i < sz; ++i) {
+                char ch = str.charAt(i);
+                if(inUnicode) {
+                    unicode.append(ch);
+                    if(unicode.length() == 4) {
+                        try {
+                            int value = Integer.parseInt(unicode.toString(), 16);
+                            out.write((char)value);
+                            unicode.setLength(0);
+                            inUnicode = false;
+                            hadSlash = false;
+                        } catch (NumberFormatException var9) {
+                            throw new IOException("Unable to parse unicode value: " + unicode, var9);
+                        }
+                    }
+                } else if(hadSlash) {
+                    hadSlash = false;
+                    switch(ch) {
+                        case '"':
+                            out.write(34);
+                            break;
+                        case '\'':
+                            out.write(39);
+                            break;
+                        case '\\':
+                            out.write(92);
+                            break;
+                        case 'b':
+                            out.write(8);
+                            break;
+                        case 'f':
+                            out.write(12);
+                            break;
+                        case 'n':
+                            out.write(10);
+                            break;
+                        case 'r':
+                            out.write(13);
+                            break;
+                        case 't':
+                            out.write(9);
+                            break;
+                        case 'u':
+                            inUnicode = true;
+                            break;
+                        default:
+                            out.write(ch);
+                    }
+                } else if(ch == 92) {
+                    hadSlash = true;
+                } else {
+                    out.write(ch);
+                }
+            }
+
+            if(hadSlash) {
+                out.write(92);
+            }
+
+        }
     }
 }

@@ -18,6 +18,14 @@ public class OValue {
 
     public  OValueType type;
 
+    public static OValue Null = null;
+
+    protected boolean _unescape = false;
+    public OValue unescape(boolean isUnescape) {
+        _unescape = isUnescape;
+        return this;
+    }
+
     public void set(int value)
     {
         _int = value;

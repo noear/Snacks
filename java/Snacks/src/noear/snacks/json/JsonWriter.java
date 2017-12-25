@@ -1,16 +1,25 @@
 package noear.snacks.json;
 
+import noear.snacks.FormatHanlder;
 import noear.snacks.ONode;
 import noear.snacks.OValue;
+
+import java.util.Date;
 
 /**
  * Created by noear on 14-6-18.
  */
 public class JsonWriter
 {
-	public JsonWriter(StringBuilder writer)
+	private FormatHanlder _dateFormat;
+	public JsonWriter(StringBuilder writer, FormatHanlder dateFormat)
 	{
 		_Writer = writer;
+		_dateFormat = dateFormat;
+
+		if(_dateFormat == null){
+			_dateFormat = ONode.TIME_FORMAT_ACTION;
+		}
 	}
 
 	private boolean _LastIsEnd = false;
@@ -166,23 +175,25 @@ public class JsonWriter
 	public final void WriteValue(java.util.Date val)
 	{
 		OnWriteBef();
-		_Writer.append('\"');
-		_Writer.append(ONode.TIME_FORMAT_ACTION.run(val));
-		_Writer.append('\"');
+		_Writer.append(_dateFormat.run(val));
 		_LastIsEnd = true;
 	}
 
     public final  void WriteValue(OValue val)
     {
-        switch (val.type)
-        {
-            case Int:WriteValue(val.getInt());break;
-            case Long:WriteValue(val.getLong());break;
-            case Double:WriteValue(val.getDouble());break;
-            case String:WriteValue(val.getString());break;
-            case Boolean:WriteValue(val.getBoolean());break;
-            case DateTime:WriteValue(val.getDate());break;
-            case Null:WriteValue(ONode.NULL_DEFAULT);break;
-        }
+    	if(val==null) {
+			WriteValue((String) null);
+		}else {
+			switch (val.type)
+			{
+				case Int:WriteValue(val.getInt());break;
+				case Long:WriteValue(val.getLong());break;
+				case Double:WriteValue(val.getDouble());break;
+				case String:WriteValue(val.getString());break;
+				case Boolean:WriteValue(val.getBoolean());break;
+				case DateTime:WriteValue(val.getDate());break;
+				case Null:WriteValue((String) null);break;
+			}
+		}
     }
 }

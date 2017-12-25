@@ -26,6 +26,16 @@ public class OObject {
         return members.get(key);
     }
 
+    public void rename(String key, String newKey) {
+        ONode val = members.get(key);
+        members.remove(key);
+        members.put(newKey, val);
+    }
+
+    public void remove(String key){
+        members.remove(key);
+    }
+
     public boolean contains(String key)
     {
         return members.containsKey(key);
