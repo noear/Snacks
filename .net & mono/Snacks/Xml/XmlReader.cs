@@ -56,9 +56,10 @@ namespace Noear.Snacks.Xml
             }
         }
 
-        private void ReadCDATA()
+        private bool ReadCDATA()
         {
             int xml_index2 = xml_index;
+            int len = xml_text.Length;
 
             while (true)
             {
@@ -68,10 +69,14 @@ namespace Noear.Snacks.Xml
                 {
                     this.Value = xml_text.Substring(xml_index2, xml_index - xml_index2);
                     xml_index = xml_index + 3;
-                    return;
+                    return true;
                 }
                 else
                     xml_index++;
+
+                if (xml_index > len) {
+                    return false;
+                }
             }
         }
 
