@@ -21,10 +21,15 @@ public class ONode extends ONodeBase {
             return "\"" + date.toString() + "\"";
     };
 
+    public static final ONode NULL =  new ONode().asNull();
+
     //=============
     public ONode(){
 
     }
+
+
+
     public ONode(int value){
         tryInitValue();
 
@@ -135,6 +140,10 @@ public class ONode extends ONodeBase {
         else {
             return _value.getString();
         }
+    }
+
+    public <T> T getModel(Class<T> cls){
+        return (T)OMapper.map(this,cls);
     }
 
     //=============

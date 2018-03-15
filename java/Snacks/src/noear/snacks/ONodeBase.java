@@ -38,6 +38,9 @@ public class ONodeBase implements Iterable<ONode>{
     }
 
     public static ONode tryLoadXml(String ops){
+        if (ops == null || ops.length() < 2)
+            return new ONode();
+
         try{
             ops = ops.trim();
 
@@ -51,6 +54,9 @@ public class ONodeBase implements Iterable<ONode>{
     }
 
     public static ONode tryLoadJson(String ops){
+        if (ops == null || ops.length() < 2)
+            return new ONode();
+
         try{
             ops = ops.trim();
 
@@ -387,6 +393,13 @@ public class ONodeBase implements Iterable<ONode>{
     {
         tryInitArray();
         return (ONode)this;
+    }
+
+    public ONode asNull() {
+        tryInitValue();
+
+        _value.type = OValueType.Null;
+        return (ONode) this;
     }
 
     protected void setInt(int value){

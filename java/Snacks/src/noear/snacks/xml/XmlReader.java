@@ -60,6 +60,10 @@ public class XmlReader {
         while (true) {
             xml_index = xml_text.indexOf(']', xml_index);
 
+            if (xml_index < 0) {
+                return false;
+            }
+
             if (xml_text.charAt(xml_index + 1) == ']' && xml_text.charAt(xml_index + 2) == '>') {
                 this.Value = xml_text.substring(xml_index2, xml_index);
                 xml_index = xml_index + 3;
