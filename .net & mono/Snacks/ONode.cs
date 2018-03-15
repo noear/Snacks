@@ -16,73 +16,15 @@ namespace Noear.Snacks {
                 return e.ToString("yyyy-MM-dd HH:mm:ss");
         };
 
-        private bool _unescape = false;
+        //private bool _unescape = false;
 
-        public ONode unescape(bool isUnescape) {
-            _unescape = isUnescape;
-            return this;
-        }
+        //public ONode unescape(bool isUnescape) {
+        //    _unescape = isUnescape;
+        //    return this;
+        //}
         //========================
 
-        public static ONode load(String ops) {
-            if (ops == null || ops.Length < 2)
-                return new ONode();
-
-            if (ops[0] == '<')
-                return readXmlValue(new XmlReader(ops));
-            else
-                return readJsonValue(new JsonReader(ops));
-        }
-
-        public static ONode tryLoad(String ops) {
-            if (ops == null || ops.Length < 2)
-                return new ONode();
-
-            try {
-                if (ops[0] == '<')
-                    return readXmlValue(new XmlReader(ops));
-                else
-                    return readJsonValue(new JsonReader(ops));
-            } catch {
-                return new ONode();
-            }
-        }
-
-        public String toJson() {
-            StringBuilder sb = new StringBuilder();
-            JsonWriter writer = new JsonWriter(sb);
-
-            writeJson(this, writer);
-
-            return sb.ToString();
-        }
-
-        public String toXml() {
-            StringBuilder sb = new StringBuilder();
-            XmlWriter writer = new XmlWriter(sb);
-
-            writer.WriteNodeStart("xml");
-            writeXml(this, writer);
-            writer.WriteNodeEnd("xml");
-
-            return sb.ToString();
-        }
-
-        public void forEach(Action<ONode> action) {
-            if (isArray) {
-                foreach (var n1 in _array.elements) {
-                    action(n1);
-                }
-            }
-        }
-
-        public void forEach(Action<String, ONode> action) {
-            if (isObject) {
-                foreach (var n1 in _object.members) {
-                    action(n1.Key, n1.Value);
-                }
-            }
-        }
+        
 
         //=============
         public ONode() {
@@ -189,22 +131,7 @@ namespace Noear.Snacks {
             if (_value == null) {
                 return "";
             } else {
-                if (_unescape) {
-                    String str = _value.getString();
-                    if (str == null || str.Length == 0) {
-                        return str;
-                    }
-
-                    try {
-                        StringWriter writer = new StringWriter();
-                        unescapeUnicode(writer, str);
-                        return writer.ToString();
-                    } catch (Exception) {
-                        return str;
-                    }
-                } else {
-                    return _value.getString();
-                }
+                return _value.getString();
             }
         }
 
@@ -233,7 +160,7 @@ namespace Noear.Snacks {
             tryInitObject();
 
             if (_object.contains(key))
-                return _object.get(key).unescape(_unescape);
+                return _object.get(key);
             else {
                 ONode temp = new ONode();
                 _object.set(key, temp);
