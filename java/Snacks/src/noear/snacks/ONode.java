@@ -201,6 +201,17 @@ public class ONode extends ONodeBase {
         return this;
     }
 
+    //返回自己
+    public ONode addAll(ONode value) {
+        tryInitArray();
+
+        if (value != null && value.isArray()) {
+            _array.elements.addAll(value._array.elements);
+        }
+
+        return this;
+    }
+
     public ONode add(String value) {
         return add(new ONode(value));
     }
