@@ -202,11 +202,11 @@ public class ONode extends ONodeBase {
     }
 
     //返回自己
-    public ONode addAll(ONode value) {
+    public ONode addAll(ONode ary) {
         tryInitArray();
 
-        if (value != null && value.isArray()) {
-            _array.elements.addAll(value._array.elements);
+        if (ary != null && ary.isArray()) {
+            _array.elements.addAll(ary._array.elements);
         }
 
         return this;
@@ -292,6 +292,16 @@ public class ONode extends ONodeBase {
     public ONode set(String key,ONode value) {
         tryInitObject();
         _object.set(key, value);
+
+        return this;
+    }
+
+    public ONode setAll(ONode obj) {
+        tryInitObject();
+
+        if (obj != null && obj.isObject()) {
+            _object.members.putAll(obj._object.members);
+        }
 
         return this;
     }
