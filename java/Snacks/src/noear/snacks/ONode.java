@@ -1,9 +1,8 @@
 package noear.snacks;
 
 
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
+import noear.snacks.exts.Act3;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -29,6 +28,21 @@ public class ONode extends ONodeBase {
     }
 
 
+    public <T> T map(T t, Act3<T,String,ONode> hander){
+        if(isObject()){
+            _object.members.forEach((k,v)->{
+                hander.run(t,k,v);
+            });
+        }
+
+        if(isArray()){
+            _array.elements.forEach(v->{
+                hander.run(t,null,v);
+            });
+        }
+
+        return t;
+    }
 
     public ONode(int value){
         tryInitValue();
@@ -135,8 +149,17 @@ public class ONode extends ONodeBase {
     }
 
     public String getString() {
-        if (_value == null)
+        if (_value == null) {
+            if(isObject()){
+                return toJson();
+            }
+
+            if(isArray()){
+                return toJson();
+            }
+
             return "";
+        }
         else {
             return _value.getString();
         }

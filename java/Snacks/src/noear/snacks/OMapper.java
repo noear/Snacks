@@ -1,5 +1,7 @@
 package noear.snacks;
 
+import jdk.nashorn.internal.runtime.Undefined;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -22,6 +24,10 @@ public class OMapper {
     //
 
     private static ONode createNode(Object value){
+        if(value == null){
+            return ONode.NULL;
+        }
+
         if(value instanceof ONode){
             return (ONode)value;
         }else if(value instanceof String){
@@ -42,6 +48,8 @@ public class OMapper {
             return createNodeByList((Collection<?>)value);
         }else if(value instanceof Object []){
             return createNodeByArray((Object [])value);
+        }else if(value instanceof Undefined){
+            return ONode.NULL;
         }else{
             return createNodeByObj(value);
         }

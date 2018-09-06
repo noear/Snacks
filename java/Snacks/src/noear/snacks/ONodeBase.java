@@ -60,7 +60,7 @@ public class ONodeBase implements Iterable<ONode>{
         try{
             ops = ops.trim();
 
-            if (ops.charAt(0) == '{')
+            if (ops.charAt(0) == '{' || ops.charAt(0) == '[')
                 return readJsonValue(new JsonReader(ops));
             else
                 return new ONode();
