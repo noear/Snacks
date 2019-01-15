@@ -61,6 +61,47 @@ public class OValue {
         _date = value;
         type=OValueType.DateTime;
     }
+
+    public void set(Object value){
+        Class<?> type = value.getClass();
+
+        if (String.class == (type)) {
+            set((String) value);
+            return;
+        }
+
+        if (Integer.class == (type) || type == Integer.TYPE) {
+            set((int)value);
+            return;
+        }
+
+        if (Long.class == (type) || type == Long.TYPE) {
+            set((long)value);
+            return;
+        }
+
+        if (Double.class == (type) || type == Double.TYPE) {
+            set((double)value);
+            return;
+        }
+
+        if (Float.class == (type) || type == Float.TYPE) {
+            set((float)value);
+            return;
+        }
+
+        if (Boolean.class == (type) || type == Boolean.TYPE) {
+            set((boolean)value);
+            return;
+        }
+
+        if(Date.class == (type)) {
+            set((Date) value);
+            return;
+        }
+
+        throw new RuntimeException("不支持类型:" + type.getName());
+    }
     //==================
 
     public int getInt()

@@ -5,7 +5,11 @@ import noear.snacks.exts.Act1;
 import noear.snacks.exts.Act3;
 
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * Created by noear on 14-6-11.
@@ -49,40 +53,35 @@ public class ONode extends ONodeBase {
         return t;
     }
 
-    public ONode(int value){
+    //返回自己（重新设置基础类型的值）
+    public <T> ONode val(T val){
         tryInitValue();
+        _value.set(val);
+        return this;
+    }
 
-        _value.set(value);
+    public ONode(int value){
+        val(value);
     }
 
     public ONode(long value){
-        tryInitValue();
-
-        _value.set(value);
+        val(value);
     }
 
     public ONode(double value){
-        tryInitValue();
-
-        _value.set(value);
+        val(value);
     }
 
     public ONode(String value){
-        tryInitValue();
-
-        _value.set(value);
+        val(value);
     }
 
     public ONode(boolean value){
-        tryInitValue();
-
-        _value.set(value);
+        val(value);
     }
 
     public ONode(Date value){
-        tryInitValue();
-
-        _value.set(value);
+        val(value);
     }
 
     public boolean contains(String key) {
@@ -217,6 +216,25 @@ public class ONode extends ONodeBase {
         return this;
     }
 
+    public ONode add(Object value){
+        tryInitArray();
+
+        if(value instanceof ONode){
+            add((ONode)value);
+        }else{
+            add(new ONode().val(value));
+        }
+
+        return this;
+    }
+
+
+    //返回自己
+    public <T> ONode addAll(Iterable<T> ary){
+        ary.forEach(m->add(m));
+        return this;
+    }
+
     public ONode add(String value) {
         return add(new ONode(value));
     }
@@ -294,13 +312,6 @@ public class ONode extends ONodeBase {
     }
 
     //返回自己
-    public ONode set(String key,ONode value) {
-        tryInitObject();
-        _object.set(key, value);
-
-        return this;
-    }
-
     public ONode setAll(ONode obj) {
         tryInitObject();
 
@@ -308,6 +319,20 @@ public class ONode extends ONodeBase {
             _object.members.putAll(obj._object.members);
         }
 
+        return this;
+    }
+
+    //返回自己
+    public <T> ONode setAll(Map<String,T> map){
+        tryInitObject();
+
+        if(map != null){
+            map.forEach((k,v)->{
+                if(v instanceof ONode) {
+                    set(k, (ONode) v);
+                }
+            });
+        }
         return this;
     }
 
@@ -348,4 +373,22 @@ public class ONode extends ONodeBase {
         return set(key, new ONode(value));
     }
 
+    //返回自己
+    public ONode set(String key,ONode value) {
+        tryInitObject();
+        _object.set(key, value);
+
+        return this;
+    }
+
+    //返回自己
+    public ONode set(String key, Object value){
+        tryInitObject();
+        if(value instanceof ONode){
+            _object.set(key,(ONode) value);
+        }else{
+            _object.set(key, new ONode().val(value));
+        }
+        return this;
+    }
 }
