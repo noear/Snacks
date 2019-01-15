@@ -146,7 +146,7 @@ public class OMapper {
             String name = field.getName();
 
             // if the object don`t has a mapping for name, then continue
-            if(!job.contains(name)) continue;
+            if(!job.contains(name)){ continue;}
 
             String typeName = type.getName();
             if(typeName.equals("java.lang.String")) {

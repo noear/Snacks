@@ -6,7 +6,7 @@
 
     <groupId>org.noear</groupId>
     <artifactId>snacks</artifactId>
-    <version>1.0.26</version>
+    <version>1.0.29</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -37,15 +37,6 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                 </configuration>
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>make-assembly</id>-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>single</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
             </plugin>
         </plugins>
 

@@ -9,7 +9,7 @@ import java.util.List;
  * Created by noear on 14-6-11.
  */
 public class OArray {
-    public List<ONode> elements;
+    public final List<ONode> elements;
 
     public  OArray(){
          elements = new ArrayList<ONode>();
@@ -30,9 +30,15 @@ public class OArray {
         return elements.get(index);
     }
 
+    public void removeAt(int index){
+        elements.remove(index);
+    }
+
     public int count(){
         return elements.size();
     }
 
-    public void clear(){}
+    public void clear(){
+        elements.clear();
+    }
 }

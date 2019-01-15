@@ -1,6 +1,7 @@
 package noear.snacks;
 
 
+import noear.snacks.exts.Act1;
 import noear.snacks.exts.Act3;
 
 import java.math.BigDecimal;
@@ -27,6 +28,10 @@ public class ONode extends ONodeBase {
 
     }
 
+    public ONode exp(Act1<ONode> expr){
+        expr.run(this);
+        return this;
+    }
 
     public <T> T map(T t, Act3<T,String,ONode> hander){
         if(isObject()){

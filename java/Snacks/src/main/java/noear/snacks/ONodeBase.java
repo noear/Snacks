@@ -104,6 +104,18 @@ public class ONodeBase implements Iterable<ONode>{
         return sb.toString();
     }
 
+    public OValue internalValue(){
+        return _value;
+    }
+
+    public OObject internalObject(){
+        return _object;
+    }
+
+    public OArray internalArray(){
+        return _array;
+    }
+
     //==============
 
     protected  void tryInitValue() {

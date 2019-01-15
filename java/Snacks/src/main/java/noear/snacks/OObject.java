@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class OObject {
 
-    public Map<String, ONode> members;
+    public final Map<String, ONode> members;
 
     public OObject(){
         members = new LinkedHashMap<String, ONode>();
@@ -45,7 +45,9 @@ public class OObject {
         return members.size();
     }
 
-    public void clear(){}
+    public void clear(){
+        members.clear();
+    }
 }
 
 
