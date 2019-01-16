@@ -2,6 +2,7 @@ package noear.snacks;
 
 
 import noear.snacks.exts.Act1;
+import noear.snacks.exts.Act2;
 import noear.snacks.exts.Act3;
 
 import java.math.BigDecimal;
@@ -223,6 +224,12 @@ public class ONode extends ONodeBase {
         return this;
     }
 
+    //返回自己
+    public <T> ONode addAll(Iterable<T> ary, Act2<ONode,T> handler) {
+        ary.forEach(m -> handler.run(this.add(), m));
+        return this;
+    }
+
     public ONode add(Object value){
         tryInitArray();
 
@@ -329,6 +336,17 @@ public class ONode extends ONodeBase {
         if (map != null) {
             map.forEach((k, v) -> {
                 set(k, v);
+            });
+        }
+        return this;
+    }
+
+    public <T> ONode setAll(Map<String,T> map, Act2<ONode,T> handler) {
+        tryInitObject();
+
+        if (map != null) {
+            map.forEach((k, v) -> {
+                handler.run(this.get(k), v);
             });
         }
         return this;
