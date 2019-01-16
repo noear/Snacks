@@ -38,3 +38,32 @@ for(int i=0;i<2; i++){
 String json = n.toJson();//or n.toXml();
 
 ```
+一极光推送的调用示例：
+```java
+ONode data = new ONode().exp((d)->{
+    d.get("platform").val("all");
+
+    d.get("audience").get("alias").addAll(alias_ary);
+
+    d.get("options")
+            .set("apns_production",false);
+
+    d.get("notification").exp(n->{
+        n.get("ios")
+                .set("alert",text)
+                .set("badge",0)
+                .set("sound","happy");
+    });
+});
+
+
+
+String message = data.toJson();
+String author = Base64Util.encode(appKey+":"+masterSecret);
+
+Map<String,String> headers = new HashMap<>();
+headers.put("Content-Type","application/json");
+headers.put("Authorization","Basic "+author);
+
+HttpUtil.postString(apiUrl, message, headers);
+```
