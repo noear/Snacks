@@ -5,11 +5,8 @@ import noear.snacks.exts.Act1;
 import noear.snacks.exts.Act3;
 
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
-import java.util.function.Consumer;
 
 /**
  * Created by noear on 14-6-11.
@@ -32,6 +29,7 @@ public class ONode extends ONodeBase {
 
     }
 
+    /**输出自己，以供消费*/
     public ONode exp(Act1<ONode> expr){
         expr.run(this);
         return this;
@@ -53,35 +51,38 @@ public class ONode extends ONodeBase {
         return t;
     }
 
-    //返回自己（重新设置基础类型的值）
-    public <T> ONode val(T val){
+    public <T> void val(T val){
+        valSet(val);
+    }
+    //返回自己（重新设置基础类型的值）//不适合做为公有的
+    protected   <T> ONode valSet(T val){
         tryInitValue();
         _value.set(val);
         return this;
     }
 
     public ONode(int value){
-        val(value);
+        valSet(value);
     }
 
     public ONode(long value){
-        val(value);
+        valSet(value);
     }
 
     public ONode(double value){
-        val(value);
+        valSet(value);
     }
 
     public ONode(String value){
-        val(value);
+        valSet(value);
     }
 
     public ONode(boolean value){
-        val(value);
+        valSet(value);
     }
 
     public ONode(Date value){
-        val(value);
+        valSet(value);
     }
 
     public boolean contains(String key) {
@@ -183,7 +184,7 @@ public class ONode extends ONodeBase {
         else
             return null;
     }
-    //返回结果节点
+    //返回结果节点，如果不存在则自动创建
     public ONode get(String key) {
         tryInitObject();
 
@@ -216,22 +217,21 @@ public class ONode extends ONodeBase {
         return this;
     }
 
+    //返回自己
+    public <T> ONode addAll(Iterable<T> ary){
+        ary.forEach(m->add(m));
+        return this;
+    }
+
     public ONode add(Object value){
         tryInitArray();
 
         if(value instanceof ONode){
             add((ONode)value);
         }else{
-            add(new ONode().val(value));
+            add(new ONode().valSet(value));
         }
 
-        return this;
-    }
-
-
-    //返回自己
-    public <T> ONode addAll(Iterable<T> ary){
-        ary.forEach(m->add(m));
         return this;
     }
 
@@ -323,14 +323,12 @@ public class ONode extends ONodeBase {
     }
 
     //返回自己
-    public <T> ONode setAll(Map<String,T> map){
+    public <T> ONode setAll(Map<String,T> map) {
         tryInitObject();
 
-        if(map != null){
-            map.forEach((k,v)->{
-                if(v instanceof ONode) {
-                    set(k, (ONode) v);
-                }
+        if (map != null) {
+            map.forEach((k, v) -> {
+                set(k, v);
             });
         }
         return this;
@@ -387,7 +385,7 @@ public class ONode extends ONodeBase {
         if(value instanceof ONode){
             _object.set(key,(ONode) value);
         }else{
-            _object.set(key, new ONode().val(value));
+            _object.set(key, new ONode().valSet(value));
         }
         return this;
     }
