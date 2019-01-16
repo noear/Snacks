@@ -220,13 +220,17 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public <T> ONode addAll(Iterable<T> ary){
-        ary.forEach(m->add(m));
+        if(ary!=null) {
+            ary.forEach(m -> add(m));
+        }
         return this;
     }
 
     //返回自己
     public <T> ONode addAll(Iterable<T> ary, Act2<ONode,T> handler) {
-        ary.forEach(m -> handler.run(this.add(), m));
+        if(ary!=null) {
+            ary.forEach(m -> handler.run(this.add(), m));
+        }
         return this;
     }
 
