@@ -38,7 +38,7 @@ for(int i=0;i<2; i++){
 String json = n.toJson();//or n.toXml();
 
 ```
-极光推送接口的使用示例：
+一个推送接口的使用示例：
 ```java
 public static void push(Collection<String> alias_ary, String text)  {
     ONode data = new ONode().exp((d)->{
