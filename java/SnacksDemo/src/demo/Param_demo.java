@@ -1,6 +1,5 @@
 package demo;
 
-import demo.util.PushApi;
 import noear.snacks.ONode;
 
 import java.util.ArrayList;
@@ -31,12 +30,6 @@ public class Param_demo {
         pd.set("CONTENT",content);
         pd.set("POOLID",poolID);
         pd.set("ORDERID",orderID);
-
-        if (1==1) { //!UserDb.isOnline(userID)) {
-            PushApi.pushMessage(userID, content, pd);//信息推送
-        } else {
-            PushApi.pushData(userID, pd);//信息推送
-        }
     }
 
     //批量推送（消息数据，上外部定制）
@@ -51,7 +44,7 @@ public class Param_demo {
             list.add(u.getLong());
         }
 
-        boolean isOk = PushApi.pushMessage2(alert, ONode.tryLoad(data),list);
+        boolean isOk = false;
 
 
         ONode output = new ONode();

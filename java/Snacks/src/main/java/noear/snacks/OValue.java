@@ -63,6 +63,11 @@ public class OValue {
     }
 
     public void set(Object value){
+        if(value == null){
+            set((String) value);
+            return;
+        }
+
         Class<?> type = value.getClass();
 
         if (String.class == (type)) {
@@ -95,7 +100,7 @@ public class OValue {
             return;
         }
 
-        if(Date.class == (type)) {
+        if(value instanceof Date) {
             set((Date) value);
             return;
         }

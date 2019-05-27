@@ -63,27 +63,33 @@ public class ONode extends ONodeBase {
     }
 
     public ONode(int value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public ONode(long value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public ONode(double value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public ONode(String value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public ONode(boolean value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public ONode(Date value){
-        valSet(value);
+        tryInitValue();
+        _value.set(value);
     }
 
     public boolean contains(String key) {
@@ -220,6 +226,8 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public <T> ONode addAll(Iterable<T> ary){
+        tryInitArray();
+
         if(ary!=null) {
             ary.forEach(m -> add(m));
         }
@@ -228,6 +236,8 @@ public class ONode extends ONodeBase {
 
     //返回自己
     public <T> ONode addAll(Iterable<T> ary, Act2<ONode,T> handler) {
+        tryInitArray();
+
         if(ary!=null) {
             ary.forEach(m -> handler.run(this.add(), m));
         }
